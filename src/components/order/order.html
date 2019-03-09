@@ -1,0 +1,14 @@
+
+<ion-header>
+    <ion-navbar>
+      <ion-title>Order</ion-title>
+      <p class="myorders">My Orders</p>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <p>{{ItemName}}</p>
+    <ion-input [(ngModel)]="quantiy"></ion-input>
+    <button ion-button block (click)="confirmOrder(quantiy)">Confirm</button>
+</ion-content>
+  
